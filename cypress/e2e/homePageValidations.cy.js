@@ -39,7 +39,7 @@ describe('validate Aloware landing page', () => {
   it('Verify Integrations Page functionality', () => {
 
     landingPage.verify_integrations_page()
-    cy.go('back')
+
   })
 
   it('Verify Performance Page functionality', () => {
