@@ -1,0 +1,33 @@
+name: Run all Cypress Tests - Daily execution 
+on:
+  schedule:
+    - cron: "0 18 * * *"  # Runs every day at 18:00 (6 PM) UTC
+  workflow_dispatch:  
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v3
+
+    - name: Set up Node.js
+      uses: actions/setup-node@v3
+      with:
+        node-version: '16'  
+
+    - name: Install dependencies
+      run: npm install
+
+    - name: Install Cypress
+      run: npm install cypress --save-dev
+
+    - name: Start XVFB
+      run: |
+        Xvfb :99 &  # Starts X virtual framebuffer
+        export DISPLAY=:99  # Set the display to the virtual framebuffer
+
+    # Run Cypress tests
+    - name: Run Cypress tests
+      run: npx cypress run
