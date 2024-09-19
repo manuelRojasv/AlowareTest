@@ -50,6 +50,9 @@ reporter: 'mochawesome',
 
 -To run the test and execute the report it is necessary to execute the previous script in the command line, this will execute the test directly in visual mode, and after execution the cypress>reports folder will be generated, and inside the HTML file with the details of the test execution (with the detail if any of the tests passed or failed)
 
+# Run tests daily via Github Actions
+The GitHub Actions are configured in the project to run all tests daily at 6:00 PM, in this way we make sure to test all the tests included in the solution daily. In the case of this particular exercise, the test that verifies the automated test cases for the home page will be run.
+
 
  
 
