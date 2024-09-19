@@ -52,6 +52,17 @@ reporter: 'mochawesome',
 
 # Run tests daily via Github Actions
 The GitHub Actions are configured in the project to run all tests daily at 6:00 PM, in this way we make sure to test all the tests included in the solution daily. In the case of this particular exercise, the test that verifies the automated test cases for the home page will be run.
+Although Github Actions will run the test daily, collaborators in the repository will not receive notifications because Github does not support sending notifications natively. It would be necessary to add some integration for sending messages, either by email or by another means. This example shows what should go in Actions if you want to send notifications through a Slack channel.
+
+You'll need to:
+Use a secret for the Slack Webhook URL in your repository's settings.
+Install a Slack Webhook URL to the channel where you want the notifications.
+![image](https://github.com/user-attachments/assets/7c3f0e11-3d4d-4cc0-b499-89255e20dd2b)
+
+
+     
+
+
 
 
  
