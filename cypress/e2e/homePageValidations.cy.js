@@ -8,7 +8,7 @@ describe('validate Aloware landing page', () => {
     
   })
 
-  it('top bar', () => {
+  it('verify the top bar main items are displayed ', () => {
     landingPage.verify_top_bar_main_items()
   })
 
