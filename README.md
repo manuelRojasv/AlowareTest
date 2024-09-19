@@ -1,5 +1,8 @@
 # Aloware Test
 
+# Important note: 
+The test plan and test cases to verify the home page are located in the cypress/fixtures/documents folder
+
 # Install Cypress and run the automated test
 Although the project already contains the necessary dependencies to be downloaded and executed (clone project), here is a brief guide on how to install Cypress and run the project.
 
