@@ -24,25 +24,25 @@ describe('validate Aloware landing page', () => {
 
   })
 
-  it('Verify Sales Dialer Page functionality', () => {
+  it('Verify Setup for Sales button functionality', () => {
 
     landingPage.verify_sales_dialer_page()
 
   })
 
-  it('Verify Business Texting Page functionality', () => {
+  it('Verify Start texting button functionality', () => {
 
     landingPage.verify_business_texting_page()
 
   })
 
-  it('Verify Integrations Page functionality', () => {
+  it('Verify See Integrations button functionality', () => {
 
     landingPage.verify_integrations_page()
 
   })
 
-  it('Verify Performance Page functionality', () => {
+  it('Verify Drive Performance button functionality', () => {
 
     landingPage.verify_performance_page()
   })
